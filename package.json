@@ -1,0 +1,54 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/class-type": "latest",
+		"@itrocks/decorator": "latest",
+		"@itrocks/transformer": "latest",
+		"@itrocks/translate": "latest"
+	},
+	"description": "A @Translate property decorator that translates a property's value at display time",
+	"devDependencies": {
+		"typescript": "~5.8"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"require": "./cjs/property-translate.js",
+			"types": "./cjs/property-translate.d.ts"
+		},
+		"./transformers": {
+			"require": "./cjs/transformers.js",
+			"types": "./cjs/transformers.d.ts"
+		}
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"!*.map"
+	],
+	"homepage": "https://it.rocks",
+	"keywords": [
+		"it.rocks",
+		"property",
+		"translate",
+		"translation",
+		"value"
+	],
+	"license": "ISC",
+	"name": "@itrocks/property-translate",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/property-translate.git"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"types": "./cjs/property-translate.d.ts",
+	"version": "0.0.1"
+}
