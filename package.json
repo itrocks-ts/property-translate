@@ -34,7 +34,11 @@
 	],
 	"homepage": "https://it.rocks",
 	"keywords": [
+		"decorator",
+		"i18n",
 		"it.rocks",
+		"localisation",
+		"localization",
 		"property",
 		"translate",
 		"translation",
@@ -50,5 +54,5 @@
 		"build": "tsc"
 	},
 	"types": "./cjs/property-translate.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }
