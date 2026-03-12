@@ -54,5 +54,5 @@
 		"build": "tsc"
 	},
 	"types": "./cjs/property-translate.d.ts",
-	"version": "0.0.3"
+	"version": "0.1.0"
 }
