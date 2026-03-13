@@ -25,7 +25,7 @@ export function Translate<T extends object>(value = true): DecorateCaller<T>
 		? (target, property, index) => {
 			const [targetObject, parameterName] = parameterProperty(target, property, index)
 			depends.setTransformers?.(targetObject, parameterName)
-			parent(target, property)
+			parent(target, property, index)
 		}
 		: parent
 }
