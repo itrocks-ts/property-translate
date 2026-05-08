@@ -11,25 +11,19 @@
 	},
 	"description": "A @Translate property decorator that translates a property's value at display time",
 	"devDependencies": {
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"exports": {
-		".": {
-			"require": "./cjs/property-translate.js",
-			"types": "./cjs/property-translate.d.ts"
-		},
-		"./transformers": {
-			"require": "./cjs/transformers.js",
-			"types": "./cjs/transformers.d.ts"
-		}
+		".": "./cjs/property-translate.js",
+		"./transformers": "./cjs/transformers.js"
 	},
 	"files": [
 		"LICENSE",
 		"README.md",
-		"cjs/*",
+		"cjs",
 		"!*.map"
 	],
 	"homepage": "https://it.rocks",
@@ -53,6 +47,5 @@
 	"scripts": {
 		"build": "tsc"
 	},
-	"types": "./cjs/property-translate.d.ts",
-	"version": "0.2.0"
+	"version": "0.2.1"
 }
